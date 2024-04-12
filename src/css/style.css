@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #0c0b08;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dcca879c;
+  border-radius: 60px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  * {
+    cursor: default;
+  }
+}
